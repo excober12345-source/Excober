@@ -5,9 +5,9 @@ load_dotenv()
 # ------------------------------
 # Exchange settings
 # ------------------------------
-# Accepts a list of exchanges as a comma-separated string:
-# Example in .env: EXCHANGES=binance,okx,bybit
-EXCHANGES = os.getenv("EXCHANGES", "binance").split(",")
+# Accepts a list of exchange as a comma-separated string:
+# Example in .env: EXCHANGE=binance,okx,bybit
+EXCHANGE = os.getenv("EXCHANGE", "binance").split(",")
 
 # ------------------------------
 # Symbol settings
