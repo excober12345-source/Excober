@@ -1,33 +1,8 @@
-import subprocess
-import sys
-
-def install(package):
-    """Install a package using pip"""
-    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-def main():
-    # List of packages (matches your requirements.txt)
-    packages = [
-        "ccxt",
-        "python-binance",
-        "bybit",
-        "okx",
-        "alpaca-trade-api",
-        "oandapyV20",
-        "pandas",
-        "numpy",
-        "scikit-learn",
-        "tensorflow",
-        "torch",
-        "ta",
-        "requests",
-        "python-dotenv"
-    ]
-
-    for pkg in packages:
-        print(f"Installing {pkg}...")
-        install(pkg)
-    print("✅ All packages installed!")
-
-if __name__ == "__main__":
-    main()
+ccxt==4.3.95
+pandas==2.2.2
+numpy==1.26.4
+scikit-learn==1.5.1
+python-dotenv==1.0.1
+ta==0.11.0
+matplotlib==3.8.4
+joblib==1.4.2
